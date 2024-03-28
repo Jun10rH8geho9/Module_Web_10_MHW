@@ -1,0 +1,12 @@
+{% extends 'quotes/base.html' %}
+
+{% block content %}
+<div class="container mt-3">
+    <h2>Logout</h2>
+    <p>Are you sure you want to logout?</p>
+    <form method="post" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Logout</button>
+    </form>
+</div>
+{% endblock %}

@@ -13,6 +13,7 @@ form = "^0.0.1"
 psycopg2 = "^2.9.9"
 bson = "^0.5.10"
 pymongo = "^4.6.2"
+mongoengine = "^0.28.2"
 
 
 [build-system]

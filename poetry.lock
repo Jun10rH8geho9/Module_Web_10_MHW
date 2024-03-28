@@ -554,6 +554,20 @@ htmlsoup = ["BeautifulSoup4"]
 source = ["Cython (>=3.0.7)"]
 
 [[package]]
+name = "mongoengine"
+version = "0.28.2"
+description = "MongoEngine is a Python Object-Document Mapper for working with MongoDB."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "mongoengine-0.28.2-py3-none-any.whl", hash = "sha256:8e0f84a5ad3d335e5da98261454d4ab546c866241ed064adc6433fe2077d43c9"},
+    {file = "mongoengine-0.28.2.tar.gz", hash = "sha256:67c35a2ebe0ee7fd8eda3766dc251b9e0aada4489bb935f7a55b4c570d148ca7"},
+]
+
+[package.dependencies]
+pymongo = ">=3.4,<5.0"
+
+[[package]]
 name = "packaging"
 version = "24.0"
 description = "Core utilities for Python packages"
@@ -1145,4 +1159,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "e93bed30b04665c8ee00fa6f1b0f588d96cd3885fc6bc60dbd074fa2b6db29fb"
+content-hash = "bddcf46b25850d3a1db816e83ec6f2fb6f0de12a53cc94516bfe03d01a48fc27"

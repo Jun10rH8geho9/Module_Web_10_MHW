@@ -1,0 +1,19 @@
+{% extends "quotes/base.html" %}
+
+{% block content %}
+<div class="container mt-3">
+    <h1 class="custom-h1">my Authors</h1>
+    {% for author in authors %}
+    <div class="card mb-3">
+        <div class="card-header">
+            {{ forloop.counter }}. {{ author.names }}
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{author.fullname}}</h5>
+            <p class="card-text">Born: {{author.born_date}} {{author.born_location}}</p>
+            <a href="{% url 'quotes:author_info' author_fullname=author.fullname %}" class="btn btn-primary">About</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
